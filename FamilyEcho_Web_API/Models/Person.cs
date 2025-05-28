@@ -35,14 +35,5 @@ namespace FamilyEcho.API.Models
         [Column("spouse_id")]
         public int? SpouseId { get; set; }
 
-        [ForeignKey("MotherId")]
-        public Person Mother { get; set; }
-
-        [ForeignKey("FatherId")]
-        public Person Father { get; set; }
-
-        [ForeignKey("SpouseId")]
-        public Person Spouse { get; set; }
-
     }
 }
